@@ -334,6 +334,6 @@ to JLCPCB or PCBWay. Select:
 
 ## Author
 
-**Marouane Daoudi**
+**Marouane Daoudi**  
 Electrical Engineering student   
 Designed in KiCad
