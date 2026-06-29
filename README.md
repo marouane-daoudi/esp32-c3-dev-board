@@ -162,7 +162,7 @@ as a simple functional indicator.
 ![Ground plane](images/pcb-layout-layer2-gnd.png)
 
 ### Layer 3 — power distribution
-![Power layer](images/pcb-layout-layer3-power.png)
+![Power layer](images/pcb-layout-layer3.png)
 
 ### Back layer (signal + crystal)
 ![PCB Back](images/pcb-layout-back.png)
