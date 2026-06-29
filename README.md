@@ -153,7 +153,7 @@ as a simple functional indicator.
 
 ### 3D render
 ![Front](images/3d-render-front.jpg)
-![Back](images/3d-render-back.jpg)
+![Back](images/3d-render-back.png)
 
 ### Front layer (signal + components)
 ![PCB Front](images/pcb-layout-front.png)
