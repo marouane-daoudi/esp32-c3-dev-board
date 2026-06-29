@@ -44,6 +44,12 @@ integrity, and low-impedance current paths throughout.
 
 ---
 
+## System overview
+
+![Block diagram](images/block-diagram.png)
+
+---
+
 ## Schematic
 
 ![Schematic](images/schematic.png)
@@ -145,17 +151,30 @@ as a simple functional indicator.
 
 ## PCB layout and routing
 
-![PCB Front Layer](images/pcb-layout-front.png)
-![PCB Back Layer](images/pcb-layout-back.png)
+### 3D render
+![Front](images/3d-render-front.jpg)
+![Back](images/3d-render-back.jpg)
+
+### Front layer (signal + components)
+![PCB Front](images/pcb-layout-front.png)
+
+### Layer 2 — continuous ground plane
+![Ground plane](images/pcb-layout-layer2-gnd.png)
+
+### Layer 3 — power distribution
+![Power layer](images/pcb-layout-layer3-power.png)
+
+### Back layer (signal + crystal)
+![PCB Back](images/pcb-layout-back.png)
 
 ### 4-layer stackup
 
 | Layer | Function |
 |---|---|
-| Layer 1 (top) | Signal routing, components |
+| Layer 1 (top) | Signal routing, components, ESD, LDO, USB-C |
 | Layer 2 | Continuous solid ground plane |
-| Layer 3 | Power distribution |
-| Layer 4 (bottom) | Signal routing, additional components |
+| Layer 3 | Long switch connections (EN and IO9 routing only) |
+| Layer 4 (bottom) | Power distribution planes (VBUS, 3.3V), crystal, additional signals |
 
 Layer 2 is kept as an uninterrupted solid ground plane 
 throughout the entire board. Every high-speed signal on the top 
