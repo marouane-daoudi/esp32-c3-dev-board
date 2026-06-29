@@ -307,8 +307,13 @@ and introduced concepts not present in simpler 2-layer designs:
 
 ## Manufacturing
 
-Gerber files in `/gerbers` verified with JLCPCB's online Gerber 
-viewer. This is a 4-layer board. When ordering, select:
+Gerber files in `/gerbers` verified with JLCPCB's online 
+Gerber viewer.
+
+![JLCPCB Gerber verification](images/gerber-preview.png)
+
+To order, zip the contents of the gerbers folder and upload 
+to JLCPCB or PCBWay. Select:
 
 - Layers: 4
 - Material: FR4
