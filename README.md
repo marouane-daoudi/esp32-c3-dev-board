@@ -161,10 +161,10 @@ as a simple functional indicator.
 ### Layer 2 — continuous ground plane
 ![Ground plane](images/pcb-layout-layer2-gnd.png)
 
-### Layer 3 — power distribution
+### Layer 3 — Long switch connections
 ![Power layer](images/pcb-layout-layer3.png)
 
-### Back layer (signal + crystal)
+### Back layer (Power distribution planes (VBUS, 3.3V), crystal, additional signals)
 ![PCB Back](images/pcb-layout-back.png)
 
 ### 4-layer stackup
