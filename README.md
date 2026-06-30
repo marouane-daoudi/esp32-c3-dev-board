@@ -2,12 +2,15 @@
 
 # ESP32-C3 WROOM Development Board
 
-A 4-layer development and testing board for the ESP32-C3 WROOM 
-module. USB-C powered, breadboard-compatible, with onboard LDO 
-regulation, ESD protection on all external interfaces, crystal 
-oscillator, reset and boot buttons, and full GPIO header access. 
-Designed in KiCad with a focus on power integrity, signal 
-integrity, and low-impedance current paths throughout.
+A 4-layer development and testing board for the ESP32-C3-WROOM-02 
+module. It uses USB-C for 5V input and USB 2.0 data, includes 
+onboard 3.3V LDO regulation, ESD protection on the USB data and 
+VBUS lines, an external crystal, reset and boot buttons, a 3.3V 
+power indicator LED, and breadboard-compatible GPIO headers.
+
+The board was designed in KiCad 10.0 with a focus on power integrity, 
+signal routing, ESD return paths, and low-impedance power 
+distribution.
 
 ---
 
@@ -60,8 +63,7 @@ integrity, and low-impedance current paths throughout.
 
 ### USB-C interface
 
-A 16-pin USB-C receptacle provides 5V power delivery and USB 
-2.0 data. Three groups of pins are used:
+A 16-pin USB-C receptacle provides 5V input power and USB 2.0 data. Three groups of pins are used:
 
 **CC1 and CC2** — each connected to GND through a 5.1kΩ 
 resistor. These configuration channel pins tell the upstream 
@@ -232,11 +234,10 @@ device selection itself.
 
 D+ and D- are routed as a tightly coupled differential pair on 
 the top layer, referenced to the continuous ground plane on 
-layer 2. The route is kept as short as possible from the USB-C 
-connector through the ESD protection device to the ESP32-C3 
-module. Trace lengths are matched and spacing is kept constant 
-throughout to maintain the 90Ω differential impedance required 
-by USB 2.0. Routing on the surface layer directly above the 
+layer 2. The route is kept short from the USB-C connector through 
+the ESD protection device to the ESP32-C3 module. Trace spacing 
+is kept consistent and the pair is routed with USB impedance 
+control in mind. Routing on the surface layer directly above the 
 ground plane ensures a well-defined return path with minimal 
 loop area.
 
@@ -326,9 +327,9 @@ to JLCPCB or PCBWay. Select:
 
 | Folder | Contents |
 |---|---|
-| `/kicad` | Schematic, PCB, and project files |
-| `/gerbers` | Fabrication-ready Gerber and drill files |
-| `/images` | 3D renders and PCB layer screenshots |
+| [`/kicad`](./kicad) | Schematic, PCB, and KiCad project files |
+| [`/gerbers`](./gerbers) | Fabrication-ready Gerber and drill files |
+| [`/images`](./images) | 3D renders, PCB layer screenshots, schematic images, and Gerber previews |
 
 ---
 ## Acknowledgments
