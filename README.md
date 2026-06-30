@@ -331,6 +331,16 @@ to JLCPCB or PCBWay. Select:
 | `/images` | 3D renders and PCB layer screenshots |
 
 ---
+## Acknowledgments
+
+Circuit design and PCB layout process based on the tutorial 
+[Design a Custom ESP32-Mini Board in KiCad 9](https://www.youtube.com/watch?v=Z7ycNfVJSJ4) by [PajoPCB]. No source files 
+were provided in the original video — schematic, PCB layout, 
+component selection, and all KiCad files in this repository 
+were built independently while following the tutorial's 
+design approach.
+
+---
 
 ## Author
 
